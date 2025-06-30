@@ -1,17 +1,17 @@
-<script lang="ts" setup>
-import Header from './Header.vue';
+<script setup lang="ts">
+import NavBar from '../components/NavBar.vue';
+
 </script>
 
 <template>
-    <el-container direction="vertical" class="main-page">
-        <Header />
+    <el-container class="page-area">
         <router-view />
+        <NavBar />
     </el-container>
 </template>
 
 <style lang="css" scoped>
-.main-page{
-    height: 100%;
-    width: 100%;
+.page-area {
+    position: relative;
 }
 </style>

@@ -3,7 +3,9 @@
 </script>
 
 <template>
-    test lobby
+    <el-container>
+        test lobby
+    </el-container>
 </template>
 
 <style lang="css">
