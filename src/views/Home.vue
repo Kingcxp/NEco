@@ -13,5 +13,6 @@ import NavBar from '../components/NavBar.vue';
 <style lang="css" scoped>
 .page-area {
     position: relative;
+
 }
 </style>
