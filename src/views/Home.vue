@@ -4,10 +4,10 @@ import NavBar from '../components/NavBar.vue';
 </script>
 
 <template>
-    <el-container class="page-area">
+    <div class="page-area">
         <router-view />
         <NavBar />
-    </el-container>
+    </div>
 </template>
 
 <style lang="css" scoped>

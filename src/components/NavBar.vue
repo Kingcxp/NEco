@@ -1,12 +1,24 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter()
 
-const navItems = ref<string[]>(["主页","列表","新闻","导航","关于"])
+interface navItem {
+    name:string,
+    url:string
+}
+const navItems = ref<navItem[]>([
+    {name:"主页",url:"/lobby"},
+    {name:"列表",url:"/list"},
+    {name:"新闻",url:"/news"},
+    {name:"导航",url:"/links"},
+    {name:"关于",url:"/about"}
+])
 const activeIndex = ref<number>(0)
-
 const setIndex = (index:number) => {
     activeIndex.value = index
+    router.push(navItems.value[index].url)
 }
 
 const sliderStyle = computed(() => {
@@ -26,7 +38,7 @@ const sliderStyle = computed(() => {
                 class="nav-item"
                 @click="setIndex(index)"
             >
-                {{ item }}
+                {{ item.name }}
             </div>
 
             <div class="slider" :style="sliderStyle">

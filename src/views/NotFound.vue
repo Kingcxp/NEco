@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-// TODO: add lobby display
+
 </script>
 
 <template>
     <div>
-        test lobby
+        404 Not Found
     </div>
 </template>
 
-<style lang="css">
+<style lang="css" scoped>
 
 </style>
