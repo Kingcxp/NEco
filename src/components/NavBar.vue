@@ -60,11 +60,10 @@ const sliderStyle = computed(() => {
 .nav-bar {
     display: flex;
     border-radius: 0;
-    background-color: rgba(red, green, blue, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     border: 2px solid gray;
     position: relative;
 }
-
 
 .nav-item {
     position: relative;
@@ -81,16 +80,14 @@ const sliderStyle = computed(() => {
     top: 0;
     left: 0;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.1); */
     z-index: 0;
     box-sizing: border-box;
     padding: 4px;
 }
 .slider-box{
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0;
-    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
     border: 2px solid gray;
     height: 100%;
     width: 100%;

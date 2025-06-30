@@ -13,31 +13,31 @@ const router = createRouter({
                     path: '/lobby',
                     name: 'lobby',
                     component: () => import('../views/Lobby/Lobby.vue'),
-                    meta: {title: 'Lobby'}
+                    meta: {title: '大厅'}
                 },
                 {
                     path: '/list',
                     name: 'list',
                     component: () => import('../views/List/List.vue'),
-                    meta: {title: 'List'}
+                    meta: {title: '服务器列表'}
                 },
                 {
                     path: '/news',
                     name: 'news',
                     component: () => import('../views/News/News.vue'),
-                    meta: {title: 'News'}
+                    meta: {title: '新闻'}
                 },
                 {
                     path: '/links',
                     name: 'links',
                     component: () => import('../views/Links/Links.vue'),
-                    meta: {title: 'Links'}
+                    meta: {title: '导航'}
                 },
                 {
                     path: '/about',
                     name: 'about',
                     component: () => import('../views/About/About.vue'),
-                    meta: {title: 'About'}
+                    meta: {title: '关于'}
                 }
             ]            
         },{
