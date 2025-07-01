@@ -35,7 +35,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 30%;
+    height: 20%;
     background: linear-gradient(to bottom, transparent 0%, var(--background-color) 100%);
 }
 

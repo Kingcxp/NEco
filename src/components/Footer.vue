@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-
+const slogan = `“都考上南京大学了，还会找不到女朋友？”`
 </script>
 
 <template>
@@ -7,7 +7,7 @@
         <div class="footer-description">
             <img src="../assets/nmo.png" alt="logo" style="width: 5rem;">
             <p>南京大学Minecraft协会</p>
-            <span>为建设富有历史内涵，面向南雍未来的MC特色社团而不懈努力！</span>
+            <span>{{ slogan }}</span>
             <span id="copyright">© 2025 - All rights reserved NMO</span>
         </div>
 
