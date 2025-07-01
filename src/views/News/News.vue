@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    News
+    News: under construction.
 </template>
 
 <style lang="css" scoped>

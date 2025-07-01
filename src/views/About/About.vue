@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    About
+    About: under construction.
 </template>
 
 <style lang="css" scoped>

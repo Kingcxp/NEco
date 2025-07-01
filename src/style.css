@@ -1,12 +1,18 @@
 :root {
-  --background-color: #101010;
+  --minecraft-green: #3c8527;
+  --minecraft-green-light: #52a535;
+  --minecraft-green-dark: #2a641c;
+  --minecraft-gray: #3d3938;
+  --minecraft-dark: #171615;
+
+  --background-color: var(--minecraft-dark);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.8);
   background-color: var(--background-color);
 
   font-synthesis: none;

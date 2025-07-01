@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import Footer from '../components/Footer.vue';
 import NavBar from '../components/NavBar.vue';
 
 </script>
@@ -7,6 +8,7 @@ import NavBar from '../components/NavBar.vue';
     <div class="page-area">
         <router-view />
         <NavBar />
+        <Footer />
     </div>
 </template>
 

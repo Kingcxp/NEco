@@ -60,7 +60,7 @@ const sliderStyle = computed(() => {
 .nav-bar {
     display: flex;
     border-radius: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid gray;
     position: relative;
 }
@@ -86,9 +86,10 @@ const sliderStyle = computed(() => {
 }
 .slider-box{
     box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--minecraft-green);
     border-radius: 0;
-    border: 2px solid gray;
+    border-top: 4px solid var(--minecraft-green-light);
+    border-bottom: 4px solid var(--minecraft-green-dark);
     height: 100%;
     width: 100%;
 }

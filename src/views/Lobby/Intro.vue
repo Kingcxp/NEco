@@ -1,9 +1,8 @@
 <script lang="ts" setup>
-
 </script>
 
 <template>
-    Links: under construction.
+
 </template>
 
 <style lang="css" scoped>

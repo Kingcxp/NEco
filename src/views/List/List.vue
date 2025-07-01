@@ -15,18 +15,21 @@ onMounted(() => {
 
 <template>
     <div class="main-area">
-        <ListItem v-for="server in serverList" :key="server.name" :server="server"/>
+        <div class="list-area">
+            <ListItem v-for="server in serverList" :key="server.name" :server="server"/>
+        </div>
     </div>
 </template>
 
 <style lang="css" scoped>
-.main-area {
+.list-area {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8rem;
+    padding: 5rem;
     box-sizing: border-box;
 }
 </style>

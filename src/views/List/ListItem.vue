@@ -16,8 +16,13 @@ const props = defineProps({
             <span style="font-weight: bolder;">{{props.server.name}}</span>
             <span>{{props.server.description}}</span>
         </div>
-        <div>
+        <div class="item-status">
+            <span v-if="props.server.playerCount!=-1">{{props.server.playerCount}} / {{ props.server.capacity }}</span>
+            <span style="margin-top: auto;">
+                <a v-if="props.server.onlineMapUrl!=''" :href="props.server.onlineMapUrl">网页地图</a> /
+                <a v-if="props.server.serverUrl!=''" :href="props.server.serverUrl">服务器地址</a>
             
+            </span>
         </div>
         
     </div>
@@ -30,6 +35,7 @@ const props = defineProps({
     padding: 4px;
     display: flex;
     flex-direction: row;
+    margin: 1rem auto;
 }
 
 .item-info {
@@ -38,5 +44,15 @@ const props = defineProps({
     justify-content: center;
     align-items: left;
     margin-left: 1rem;
+}
+
+.item-status {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: auto;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 </style>
