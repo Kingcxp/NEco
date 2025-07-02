@@ -1,11 +1,10 @@
 <script lang="ts" setup>
+import Intro from './Intro.vue';
 
 </script>
 
 <template>
     <div class="main-area">
-        <div class="left-area">
-        </div>
         <div class="right-area">
             <div class="right-content">
                 <div>
@@ -16,6 +15,7 @@
             </div>
         </div>
     </div>
+    <Intro/>
 </template>
 
 <style lang="css" scoped>
@@ -40,12 +40,14 @@
 }
 
 .left-area {
-    width: 50%;
+    width: auto;
 }
 
 .right-area {
     width: 50%;
     height: 100%;
+    margin-left: auto;
+    min-width: 25rem;
     display: flex;
     align-items: center;
 }

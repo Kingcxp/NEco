@@ -36,6 +36,7 @@ const props = defineProps({
     display: flex;
     flex-direction: row;
     margin: 1rem auto;
+    min-width: 20rem;
 }
 
 .item-info {

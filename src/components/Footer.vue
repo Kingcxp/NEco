@@ -23,9 +23,10 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
 
 <style lang="css" scoped>
 .footer-area {
-    padding: 5rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer-description {

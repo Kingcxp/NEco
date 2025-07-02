@@ -55,6 +55,7 @@ const sliderStyle = computed(() => {
     left: 50%;
     transform: translateX(-50%);
     justify-content: center;
+    min-width: max-content;
 }
 
 .nav-bar {
