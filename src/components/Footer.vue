@@ -16,6 +16,7 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
                 <p>外部链接</p>
                 <a href="https://qm.qq.com/q/J9i2nFAFkS">QQ交流群</a>
                 <a href="https://space.bilibili.com/646892894">bilibili</a>
+                <a href="https://github.com/EntropyGenerator/neco">Github源码</a>
             </div>
         </div>
     </div>
@@ -32,6 +33,7 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
 .footer-description {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .footer-description p {
@@ -64,6 +66,5 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-right:2rem;
 }
 </style>

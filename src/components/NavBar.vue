@@ -56,6 +56,8 @@ const sliderStyle = computed(() => {
     transform: translateX(-50%);
     justify-content: center;
     min-width: max-content;
+
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .nav-bar {
@@ -93,5 +95,7 @@ const sliderStyle = computed(() => {
     border-bottom: 4px solid var(--minecraft-green-dark);
     height: 100%;
     width: 100%;
+
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 </style>

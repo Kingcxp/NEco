@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-// TODO: add server list
+// TODO: server list
 import { onMounted, ref } from 'vue';
 import { getServerList, type ServerItem } from '../../api/serverlist';
 import ListItem from './ListItem.vue';
@@ -14,11 +14,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="main-area">
         <div class="list-area">
             <ListItem v-for="server in serverList" :key="server.name" :server="server"/>
         </div>
-    </div>
 </template>
 
 <style lang="css" scoped>
@@ -29,7 +27,23 @@ onMounted(() => {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     box-sizing: border-box;
+    background-image: url(../../assets/background/list-background.png);
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.list-area::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    background: linear-gradient(to bottom, transparent 0%, var(--background-color) 100%);
 }
 </style>

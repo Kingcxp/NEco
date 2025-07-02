@@ -37,6 +37,9 @@ const props = defineProps({
     flex-direction: row;
     margin: 1rem auto;
     min-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% auto;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .item-info {
