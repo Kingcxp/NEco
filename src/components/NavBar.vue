@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue';
+import { computed, onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter()
@@ -28,6 +28,15 @@ const sliderStyle = computed(() => {
     transition: 'transform 0.5s ease'
   };
 });
+
+onMounted(() => {
+    const path = router.currentRoute.value.path
+    navItems.value.forEach((item,index) => {
+        if(item.url === path){
+            activeIndex.value = index
+        }
+    })
+})
 </script>
 
 <template>

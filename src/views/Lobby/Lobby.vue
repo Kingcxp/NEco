@@ -4,18 +4,20 @@ import Intro from './Intro.vue';
 </script>
 
 <template>
-    <div class="main-area">
-        <div class="right-area">
-            <div class="right-content">
-                <div>
-                    <img src="../../assets/nmo.png" alt="LOGO" style="height: 5rem;"/>
+    <div>
+        <div class="main-area">
+            <div class="right-area">
+                <div class="right-content">
+                    <div>
+                        <img src="../../assets/nmo.png" alt="LOGO" style="height: 5rem;"/>
+                    </div>
+                    <p class="description">南京大学Minecraft协会</p>
+                    <span>在Minecraft基础上，发展建筑，计算机，软件，电路，建模等方面的知识水平，充分利用同学们的兴趣，形成具有南大特色的mc社区文化，进一步提升学校影响力。</span>
                 </div>
-                <p class="description">南京大学Minecraft协会</p>
-                <span>在Minecraft基础上，发展建筑，计算机，软件，电路，建模等方面的知识水平，充分利用同学们的兴趣，形成具有南大特色的mc社区文化，进一步提升学校影响力。</span>
             </div>
         </div>
+        <Intro/>
     </div>
-    <Intro/>
 </template>
 
 <style lang="css" scoped>
@@ -58,6 +60,7 @@ import Intro from './Intro.vue';
     /* border-left: 4px solid #fff; */
     padding-left: 10%;
     max-width: 25rem;
+    padding-right: 1rem;
 }
 
 .right-content p {
