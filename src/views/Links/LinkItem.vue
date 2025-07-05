@@ -7,12 +7,15 @@ const props = defineProps({
         type: LinkInfoItem,
         required: true
     }
+})
+
+const jumpto = (url:string) => {
+    window.open(url, '_blank')
 }
-)
 </script>
 
 <template>
-    <div class="link-card" :style="{ backgroundImage: `url(${props.link.image})`}">
+    <div class="link-card" :style="{ backgroundImage: `url(${props.link.image})`}" @click="jumpto(props.link.url)">
         <div class="link-content">
             <p>{{ link.name }}</p>
             <span>{{ link.description }}</span>
@@ -31,12 +34,19 @@ const props = defineProps({
     border-bottom: 2px solid var(--minecraft-green-dark);
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);;
 }
+
 .link-content {
     margin-top: auto;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .link-content p {
     font-size: 1.2rem;

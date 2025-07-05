@@ -25,7 +25,21 @@ const router = createRouter({
                     path: '/news',
                     name: 'news',
                     component: () => import('../views/News/News.vue'),
-                    meta: {title: '新闻'}
+                    meta: {title: '新闻'},
+                    children: [
+                        {
+                            path: '/news/activity',
+                            name: 'activity',
+                            component: () => import('../views/News/Activities.vue'),
+                            meta: {title: '活动'}
+                        },
+                        {
+                            path: '/news/journal',
+                            name: 'journal',
+                            component: () => import('../views/News/Journals.vue'),
+                            meta: {title: '社刊'}
+                        }
+                    ]
                 },
                 {
                     path: '/links',

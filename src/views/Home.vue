@@ -29,7 +29,7 @@ const route= useRoute();
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.2s ease;
+  transition: opacity 0.15s ease;
 }
 
 .fade-enter-from,

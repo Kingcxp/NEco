@@ -14,9 +14,9 @@ onMounted(() => {
 </script>
 
 <template>
-        <div class="list-area">
-            <ListItem v-for="server in serverList" :key="server.name" :server="server"/>
-        </div>
+    <div class="list-area">
+        <ListItem v-for="server in serverList" :key="server.name" :server="server"/>
+    </div>
 </template>
 
 <style lang="css" scoped>
