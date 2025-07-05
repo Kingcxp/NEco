@@ -8,7 +8,13 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
             <img src="../assets/nmo.png" alt="logo" style="width: 5rem;">
             <p>南京大学Minecraft协会</p>
             <span>{{ slogan }}</span>
-            <span id="copyright">© 2025 - All rights reserved NMO</span>
+            <span id="copyright">
+                © 2025 - All rights reserved NMO
+            </span>
+            <span id="declaration">
+                NOT AN OFFICIAL MINECRAFT ORGANIZATION <br>
+                NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT 
+            </span>
         </div>
 
         <div class="footer-links">
@@ -45,6 +51,11 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
 
 .footer-description #copyright {
     font-size: 0.8rem;
+    color: gray;
+}
+
+.footer-description #declaration {
+    font-size: 0.5rem;
     color: gray;
 }
 

@@ -51,8 +51,6 @@ const jumpto = (url:string) => {
 .link-content p {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-
+    margin: 0;
 }
 </style>

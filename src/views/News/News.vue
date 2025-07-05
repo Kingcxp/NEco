@@ -4,6 +4,7 @@
 
 <template>
     <div class='news-area'>
+        TODO: this page is under construction
         <div class="activity-list">
             活动
         </div>
