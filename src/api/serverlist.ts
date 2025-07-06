@@ -28,26 +28,53 @@ export const getStatusList = (): Promise<ServerItem[]> => {
 // Static infomation list.
 export const getServerList = (): Promise<ServerItem[]> => {
     return new Promise((resolve) => {
-        resolve([{
-                name: 'Server 1',
-                description: 'This is the first server',
+        resolve([
+            {
+                name: '群组服',
+                description: '包括 原版生存服、建筑服等',
                 online: true,
-                playerCount: 10,
-                capacity: 100,
+                playerCount: -1,
+                capacity: -1,
                 icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA...==',
-                onlineMapUrl: 'https://example.com/map1.png',
-                serverUrl: 'https://example.com/server1'
+                onlineMapUrl: '',
+                serverUrl: 'https://mc.nmo.net.cn/'
             },{
-                name: 'Server 2',
-                description: 'This is the second server',
-                online: false,
-                playerCount: 0,
-                capacity: 100,
+                name: '原版生存服',
+                description: '由许多巨型空岛组成的世界',
+                online: true,
+                playerCount: -1,
+                capacity: -1,
                 icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA...==',
-                onlineMapUrl: 'https://example.com/map2.png',
-                serverUrl: 'https://example.com/server2'
-            }
-    
+                onlineMapUrl: 'https://map.survival.nmo.net.cn/',
+                serverUrl: ''
+            } as ServerItem,{
+                name: '建筑服',
+                description: '各位建筑大佬们自由发挥的地方！',
+                online: true,
+                playerCount: -1,
+                capacity: -1,
+                icon: '',
+                onlineMapUrl: 'https://map.build.nmo.net.cn/',
+                serverUrl: ''
+            } as ServerItem,{
+                name: '模组一服：飞轮新大陆',
+                description: '在全新的大陆上散布飞轮文明的火种吧！',
+                online: true,
+                playerCount: -1,
+                capacity: -1,
+                icon: '',
+                onlineMapUrl: 'https://map.mod.nmo.net.cn/',
+                serverUrl: 'https://mod.nmo.net.cn'
+            } as ServerItem,{
+                name: '模组三服',
+                description: 'TODO模组三服的描述',
+                online: true,
+                playerCount: -1,
+                capacity: -1,
+                icon: '',
+                onlineMapUrl: 'https://map.modbuild.nmo.net.cn/',
+                serverUrl: 'https://modbuild.nmo.net.cn'
+            } as ServerItem
         ]);
     })
 }

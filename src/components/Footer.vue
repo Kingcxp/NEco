@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const slogan = `“都考上南京大学了，还会找不到女朋友？”`
+const slogan = `煤炭 (Coal) 出自《Minecraft》，是可再生资源，收获来自 煤矿石 以及击杀凋灵骷髅有1/3的概率获得1个，可以使用任何 镐 来挖取煤矿石。`
 </script>
 
 <template>
@@ -40,6 +40,7 @@ const slogan = `“都考上南京大学了，还会找不到女朋友？”`
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
+    max-width: 30rem;
 }
 
 .footer-description p {

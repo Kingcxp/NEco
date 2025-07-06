@@ -41,8 +41,15 @@ import Intro from './Intro.vue';
     background: linear-gradient(to bottom, transparent 0%, var(--background-color) 100%);
 }
 
-.left-area {
-    width: auto;
+@keyframes entry-effect {
+    from {
+        opacity: 0;
+        transform: translate(2rem, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
 }
 
 .right-area {
@@ -61,6 +68,7 @@ import Intro from './Intro.vue';
     padding-left: 10%;
     max-width: 25rem;
     padding-right: 1rem;
+    animation: entry-effect 1s ease-out forwards;
 }
 
 .right-content p {

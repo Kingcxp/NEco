@@ -17,9 +17,12 @@ const props = defineProps({
             <span>{{props.server.description}}</span>
         </div>
         <div class="item-status">
-            <span v-if="props.server.playerCount!=-1">{{props.server.playerCount}} / {{ props.server.capacity }}</span>
+            <span v-if="props.server.playerCount!=-1">{{props.server.playerCount}}</span>
+            <span v-if="props.server.playerCount!=-1">/</span>
+            <span v-if="props.server.capacity!=-1">{{ props.server.capacity }}</span>
             <span style="margin-top: auto;">
-                <a v-if="props.server.onlineMapUrl!=''" :href="props.server.onlineMapUrl">网页地图</a> /
+                <a v-if="props.server.onlineMapUrl!=''" :href="props.server.onlineMapUrl">网页地图</a>
+                <span v-if="props.server.onlineMapUrl!='' && props.server.serverUrl!=''">/</span>
                 <a v-if="props.server.serverUrl!=''" :href="props.server.serverUrl">服务器地址</a>
             
             </span>
