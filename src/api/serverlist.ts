@@ -22,7 +22,7 @@ export const getServerList = async (): Promise<ServerItem[]> => {
                 icon: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA...==',
                 onlineMapUrl: '',
                 serverUrl: 'https://mc.nmo.net.cn/'
-            },{
+            } as ServerItem,{
                 name: '原版生存服',
                 description: '由许多巨型空岛组成的世界',
                 online: true,

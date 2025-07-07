@@ -13,7 +13,7 @@ const router = createRouter({
                     path: '/lobby',
                     name: 'lobby',
                     component: () => import('../views/Lobby/Lobby.vue'),
-                    meta: {title: '大厅'}
+                    meta: {title: 'NMO'}
                 },
                 {
                     path: '/list',
