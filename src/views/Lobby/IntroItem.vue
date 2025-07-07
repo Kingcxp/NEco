@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { IntroInfoItem } from '@/api/introlist';
+import loadImageAsset from '@/util/loadimage';
 
 const props = defineProps({
     intro: {
@@ -11,13 +12,12 @@ const props = defineProps({
         default: false
     }
 })
-
 </script>
 
 <template>
     <div class="intro-box">
         <div :class="!right?'intro-right':'intro-left'">
-            <img :src="props.intro.image" alt="image" class="intro-image">
+            <img :src="loadImageAsset(props.intro.image)" alt="image" class="intro-image">
             <div class="intro-text">
                 <p>{{ props.intro.title }}</p>
                 <span>{{ props.intro.description }}</span>

@@ -1,11 +1,15 @@
 <script lang="ts" setup>
+import loadImageAsset from '@/util/loadimage';
+
 const slogan = `煤炭 (Coal) 出自《Minecraft》，是可再生资源，收获来自 煤矿石 以及击杀凋灵骷髅有1/3的概率获得1个，可以使用任何 镐 来挖取煤矿石。`
+
+
 </script>
 
 <template>
     <div class="footer-area">
         <div class="footer-description">
-            <img src="/nmo.png" alt="logo" style="width: 5rem;">
+            <img :src="loadImageAsset('nmo-logo-large.png')" alt="logo" style="width: 5rem;">
             <p>南京大学Minecraft协会</p>
             <span>{{ slogan }}</span>
             <span id="copyright">
