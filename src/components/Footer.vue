@@ -5,7 +5,7 @@ const slogan = `煤炭 (Coal) 出自《Minecraft》，是可再生资源，收�
 <template>
     <div class="footer-area">
         <div class="footer-description">
-            <img src="../assets/nmo.png" alt="logo" style="width: 5rem;">
+            <img src="@/assets/nmo.png" alt="logo" style="width: 5rem;">
             <p>南京大学Minecraft协会</p>
             <span>{{ slogan }}</span>
             <span id="copyright">

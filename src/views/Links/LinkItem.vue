@@ -4,7 +4,7 @@ import { LinkInfoItem } from '../../api/linklist';
 
 const props = defineProps({
     link: {
-        type: LinkInfoItem,
+        type: Object as ()=> LinkInfoItem,
         required: true
     }
 })

@@ -3,7 +3,7 @@ import { ServerItem } from '../../api/serverlist';
 
 const props = defineProps({
     server: {
-        type: ServerItem,
+        type: Object as () => ServerItem,
         required: true
     }
 })

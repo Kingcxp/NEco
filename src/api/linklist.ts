@@ -5,7 +5,7 @@ export class LinkInfoItem {
     description: string="";
 }
 
-export const getLinkList = (): Promise<LinkInfoItem[]> => {
+export const getLinkList = async (): Promise<LinkInfoItem[]> => {
     return new Promise((resolve) => {
         resolve([
             {

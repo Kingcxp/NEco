@@ -9,24 +9,8 @@ export class ServerItem {
     serverUrl: string = "";
 }
 
-// Fetch real-time status.
-export const getStatusList = (): Promise<ServerItem[]> => {
-    return new Promise((resolve) => {
-        resolve([{
-            name: 'Server 1',
-            description: 'This is the first server',
-            online: true,
-            playerCount: 10,
-            capacity: 20,
-            icon: "",
-            onlineMapUrl: "",
-            serverUrl: ""
-        }]);
-    });
-}
-
 // Static infomation list.
-export const getServerList = (): Promise<ServerItem[]> => {
+export const getServerList = async (): Promise<ServerItem[]> => {
     return new Promise((resolve) => {
         resolve([
             {
