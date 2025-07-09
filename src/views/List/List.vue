@@ -30,7 +30,7 @@ onMounted(() => {
     padding-top: 5rem;
     padding-bottom: 5rem;
     box-sizing: border-box;
-    background-image: url('@/assets/background/list-background.png');
+    background-image: url('/background/list-background.png');
     background-position: center;
     background-size: cover;
 
