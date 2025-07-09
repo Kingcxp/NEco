@@ -3,9 +3,8 @@
 </script>
 
 <template>
-    TODO
+    Journals: under construction
 </template>
 
 <style lang="css" scoped>
-
 </style>

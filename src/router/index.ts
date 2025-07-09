@@ -25,33 +25,19 @@ const router = createRouter({
                     path: '/news',
                     name: 'news',
                     component: () => import('../views/News/News.vue'),
-                    meta: {title: '新闻'},
-                    children: [
-                        {
-                            path: '/news/activity',
-                            name: 'activity',
-                            component: () => import('../views/News/Activities.vue'),
-                            meta: {title: '活动'}
-                        },
-                        {
-                            path: '/news/journal',
-                            name: 'journal',
-                            component: () => import('../views/News/Journals.vue'),
-                            meta: {title: '社刊'}
-                        }
-                    ]
+                    meta: {title: '新闻'}
                 },
                 {
-                    path: '/links',
-                    name: 'links',
-                    component: () => import('../views/Links/Links.vue'),
-                    meta: {title: '导航'}
+                    path: '/journals',
+                    name: 'journals',
+                    component: () => import('../views/Journals/Journals.vue'),
+                    meta: {title: 'NMO社刊'}
                 },
                 {
                     path: '/about',
                     name: 'about',
                     component: () => import('../views/About/About.vue'),
-                    meta: {title: '关于'}
+                    meta: {title: '关于NMO'}
                 }
             ]            
         },{

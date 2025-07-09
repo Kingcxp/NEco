@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { GetIntroList, IntroInfoItem } from '@/api/introlist';
 import { onMounted, ref } from 'vue';
-import IntroItem from './IntroItem.vue';
+import IntroItem from '@/components/IntroItem.vue';
 
 const intros = ref<IntroInfoItem[]>([]);
 

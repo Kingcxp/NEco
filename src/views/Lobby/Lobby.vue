@@ -28,6 +28,7 @@ import Intro from './Intro.vue';
     display: flex;
     background-image: url('/background/main-background.png');
     background-repeat:no-repeat;
+    background-position: center;
     background-size: cover;
     position: relative;
 }
