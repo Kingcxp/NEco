@@ -50,12 +50,24 @@ const props = defineProps({
 .intro-text {
     max-width: 30rem;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.intro-left .intro-text{
+    text-align: left;
+}
+
+.intro-right .intro-text{
+    text-align: right;
 }
 
 .intro-text p {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 0.5rem;
+    margin-top: 0;
     margin-bottom: 0.5rem;
 }
 
