@@ -1,5 +1,6 @@
 const loadImageAsset = (url: string): string => {
-    return new URL(`/`+url,import.meta.url).href
+    // return new URL(`../assets/`+url,import.meta.url).href
+    return `/`+url
 }
 
 export default loadImageAsset
