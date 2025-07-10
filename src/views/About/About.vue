@@ -23,7 +23,7 @@ onMounted(async () => {
             <LinkItem v-for="item in linkList" :key="item.name" :link="item"/>
         </div>
         <div class="intro-area">
-            <h1>关于我们</h1>
+            <h1>更多关于我们的事情...</h1>
             <IntroItem v-for="(intro, index) in intros" :key="index" :intro="intro" :right="index % 2 == 1"/>
         </div>
     </div>
