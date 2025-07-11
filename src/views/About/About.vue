@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
-import { GetLinkList, LinkInfoItem } from '@/api/linklist';
+import { GetLinkList, LinkEntity } from '@/api/linklist';
 import LinkItem from './LinkItem.vue';
-import { GetDetailedIntroList, type IntroInfoItem } from '@/api/introlist';
+import { GetDetailedIntroList, type IntroEntity } from '@/api/introlist';
 import IntroItem from '@/components/IntroItem.vue';
 
-const linkList = ref<LinkInfoItem[]>([]);
-const intros = ref<IntroInfoItem[]>([]);
+const linkList = ref<LinkEntity[]>([]);
+const intros = ref<IntroEntity[]>([]);
 onMounted(async () => {
     GetLinkList().then((res) => {
         linkList.value.splice(0, linkList.value.length, ...res)
@@ -42,6 +42,7 @@ onMounted(async () => {
     align-items: flex-start;
     background-image: url('/background/links-background.png');
     background-size: cover;
+    background-position: center;
 
     position: relative;
 }

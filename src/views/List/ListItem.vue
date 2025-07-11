@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { ServerItem } from '../../api/serverlist';
+import { ServerEntity } from '../../api/serverlist';
 
 const props = defineProps({
     server: {
-        type: Object as () => ServerItem,
+        type: Object as () => ServerEntity,
         required: true
     }
 })

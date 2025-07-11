@@ -1,10 +1,10 @@
-export class IntroInfoItem {
+export class IntroEntity {
     title: string = "";
     description: string = "";
     image: string = "";
 }
 
-export const GetIntroList = async (): Promise<IntroInfoItem[]> => {
+export const GetIntroList = async (): Promise<IntroEntity[]> => {
     return new Promise((resolve) => {
         resolve([
             {
@@ -28,7 +28,7 @@ export const GetIntroList = async (): Promise<IntroInfoItem[]> => {
     })
 }
 
-export const GetDetailedIntroList = async (): Promise<IntroInfoItem[]> => {
+export const GetDetailedIntroList = async (): Promise<IntroEntity[]> => {
     return new Promise((resolve)=>{
         resolve([
             {

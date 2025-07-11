@@ -1,11 +1,11 @@
-export class LinkInfoItem {
+export class LinkEntity {
     name: string="";
     image: string="";
     url: string="";
     description: string="";
 }
 
-export const GetLinkList = async (): Promise<LinkInfoItem[]> => {
+export const GetLinkList = async (): Promise<LinkEntity[]> => {
     return new Promise((resolve) => {
         resolve([
             {

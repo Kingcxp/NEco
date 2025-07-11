@@ -19,19 +19,19 @@ const router = createRouter({
                     path: '/list',
                     name: 'list',
                     component: () => import('../views/List/List.vue'),
-                    meta: {title: '服务器列表'}
+                    meta: {title: 'NMO服务器列表'}
+                },
+                {
+                    path: '/activity',
+                    name: 'activity',
+                    component: () => import('../views/Activity/Activity.vue'),
+                    meta: {title: 'NMO活动列表'}
                 },
                 {
                     path: '/news',
                     name: 'news',
                     component: () => import('../views/News/News.vue'),
-                    meta: {title: '新闻'}
-                },
-                {
-                    path: '/journals',
-                    name: 'journals',
-                    component: () => import('../views/Journals/Journals.vue'),
-                    meta: {title: 'NMO社刊'}
+                    meta: {title: 'NMO新闻'}
                 },
                 {
                     path: '/about',

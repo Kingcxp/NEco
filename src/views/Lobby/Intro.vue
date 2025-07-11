@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { GetIntroList, IntroInfoItem } from '@/api/introlist';
+import { GetIntroList, IntroEntity } from '@/api/introlist';
 import { onMounted, ref } from 'vue';
 import IntroItem from '@/components/IntroItem.vue';
 
-const intros = ref<IntroInfoItem[]>([]);
+const intros = ref<IntroEntity[]>([]);
 
 onMounted(async()=>{
     let result = await GetIntroList();

@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { IntroInfoItem } from '@/api/introlist';
+import { IntroEntity } from '@/api/introlist';
 import loadImageAsset from '@/util/loadimage';
 
 const props = defineProps({
     intro: {
-        type: Object as () => IntroInfoItem,
+        type: Object as () => IntroEntity,
         required: true
     },
     right: {

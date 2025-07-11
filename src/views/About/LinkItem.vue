@@ -1,10 +1,10 @@
 <script lang="ts" setup>
-import { LinkInfoItem } from '../../api/linklist';
+import { LinkEntity } from '../../api/linklist';
 
 
 const props = defineProps({
     link: {
-        type: Object as ()=> LinkInfoItem,
+        type: Object as ()=> LinkEntity,
         required: true
     }
 })

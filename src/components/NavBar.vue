@@ -11,8 +11,8 @@ interface navItem {
 const navItems = ref<navItem[]>([
     {name:"主页",url:"/lobby"},
     {name:"列表",url:"/list"},
+    {name:"活动",url:"/activity"},
     {name:"新闻",url:"/news"},
-    {name:"社刊",url:"/journals"},
     {name:"关于",url:"/about"}
 ])
 const activeIndex = ref<number>(0)

@@ -2,7 +2,9 @@
   --minecraft-green: #3c8527;
   --minecraft-green-light: #52a535;
   --minecraft-green-dark: #2a641c;
+  --minecraft-gray-light: #747271;
   --minecraft-gray: #3d3938;
+  --minecraft-gray-dark: #262524;
   --minecraft-dark: #171615;
 
   --background-color: var(--minecraft-dark);
