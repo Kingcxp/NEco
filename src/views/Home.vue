@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import Footer from '../components/Footer.vue';
-import NavBar from '../components/NavBar.vue';
+import { useRoute } from 'vue-router'
+import Footer from '../components/Footer.vue'
+import NavBar from '../components/NavBar.vue'
 
 const route= useRoute();
 
@@ -25,7 +25,6 @@ const route= useRoute();
 .page-area {
     position: relative;
 }
-
 
 .fade-enter-active,
 .fade-leave-active {

@@ -1,7 +1,5 @@
 <script lang="ts" setup>
-import loadImageAsset from '@/util/loadimage';
-
-
+import loadImageAsset from '@/util/loadimage'
 </script>
 
 <template>

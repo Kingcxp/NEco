@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { ActivityEntity, GetActivityList } from '@/api/activitylist';
-import { onMounted, ref } from 'vue';
-import ActivityItem from './ActivityItem.vue';
+import { ActivityEntity, GetActivityList } from '@/api/activitylist'
+import { onMounted, ref } from 'vue'
+import ActivityItem from './ActivityItem.vue'
 
 const activities = ref<ActivityEntity[]>([])
 

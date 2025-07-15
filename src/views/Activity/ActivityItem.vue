@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import type { ActivityEntity } from '@/api/activitylist';
-import { computed } from 'vue';
+import type { ActivityEntity } from '@/api/activitylist'
+import { computed } from 'vue'
 
 const props = defineProps({
     activity: {

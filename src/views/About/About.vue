@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
-import { GetLinkList, LinkEntity } from '@/api/linklist';
-import LinkItem from './LinkItem.vue';
-import { GetDetailedIntroList, type IntroEntity } from '@/api/introlist';
-import IntroItem from '@/components/IntroItem.vue';
+import { onMounted, ref } from 'vue'
+import { GetLinkList, LinkEntity } from '@/api/linklist'
+import LinkItem from './LinkItem.vue'
+import { GetDetailedIntroList, type IntroEntity } from '@/api/introlist'
+import IntroItem from '@/components/IntroItem.vue'
 
 const linkList = ref<LinkEntity[]>([]);
 const intros = ref<IntroEntity[]>([]);

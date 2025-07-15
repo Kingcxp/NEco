@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 // TODO: server list
-import { onMounted, ref } from 'vue';
-import { getServerList, type ServerEntity } from '../../api/serverlist';
-import ListItem from './ListItem.vue';
+import { onMounted, ref } from 'vue'
+import { getServerList, type ServerEntity } from '../../api/serverlist'
+import ListItem from './ListItem.vue'
 
 const serverList = ref<ServerEntity[]>([]);
 

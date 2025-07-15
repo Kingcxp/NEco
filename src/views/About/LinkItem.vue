@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { LinkEntity } from '../../api/linklist';
+import { LinkEntity } from '../../api/linklist'
 
 
 const props = defineProps({

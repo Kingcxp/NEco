@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import loadImageAsset from '@/util/loadimage';
-import Intro from './Intro.vue';
+import loadImageAsset from '@/util/loadimage'
+import Intro from './Intro.vue'
 
 </script>
 
