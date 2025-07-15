@@ -25,3 +25,6 @@ dist-ssr
 
 # Plugins
 .VSCodeCounter/*
+
+# Nvm rcfile
+.nvmrc
