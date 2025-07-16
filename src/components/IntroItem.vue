@@ -68,6 +68,8 @@ const props = defineProps({
   display: flex;
   flex-direction: column;
   justify-content: center;
+  opacity: 0;
+  animation: fade-in-down 1s ease-out .5s forwards;
 }
 
 .intro-left .intro-text {
