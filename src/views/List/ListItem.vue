@@ -47,6 +47,7 @@ const props = defineProps({
   background-color: rgba(0, 0, 0, 0.5);
   background-size: 100% auto;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.7);
+  animation: fade-in-right 1s ease-in-out forwards;
 }
 
 .item-info {
