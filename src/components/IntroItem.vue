@@ -72,12 +72,14 @@ const props = defineProps({
 
 .intro-left .intro-text {
   text-align: left;
-  animation: fade-in-right 1s ease-out forwards;
+  opacity: 0;
+  animation: fade-in-right 1s ease-out 1s forwards;
 }
 
 .intro-right .intro-text {
   text-align: right;
-  animation: fade-in-left 1s ease-out forwards;
+  opacity: 0;
+  animation: fade-in-left 1s ease-out 1s forwards;
 }
 
 .intro-text p {
@@ -99,10 +101,12 @@ const props = defineProps({
 }
 
 .intro-left .intro-image {
-  animation: fade-in-left 1s ease-out forwards;
+  opacity: 0;
+  animation: fade-in-left 1s ease-out 1s forwards;
 }
 
 .intro-right .intro-image {
-  animation: fade-in-right 1s ease-out forwards;
+  opacity: 0;
+  animation: fade-in-right 1s ease-out 1s forwards;
 }
 </style>
